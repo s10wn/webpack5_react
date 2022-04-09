@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); // Импортируем плагин
+const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 let mode = 'development';
@@ -10,15 +10,15 @@ if (process.env.NODE_ENV === 'production') {
 
 const plugins = [
   new HtmlWebpackPlugin({
-    template: './public/index.html', // Данный html будет использован как шаблон
+    template: './public/index.html', 
     favicon: './public/favicon.ico'
 }),
 
-]; // Создаем массив плагинов
+]; 
 
 module.exports = {
   mode,
-  plugins, // Сокращенная запись plugins: plugins в ES6+
+  plugins, 
   entry: './src/index.js',
   devtool: 'cheap-module-source-map',
   output: {
@@ -43,7 +43,7 @@ module.exports = {
             'postcss-loader',
             'sass-loader',
           ],
-        }, // Добавляем загрузчики стилей
+        }, 
         {
             test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
             type: mode === 'production' ? 'asset' : 'asset/resource', 
