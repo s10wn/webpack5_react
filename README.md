@@ -1,4 +1,4 @@
-# webpack5 + react 18
+# webpack5 + react 18 Готовая сборка
 
 Webpack 5 С установленным react.Так-же добавлены sass scss. 
 Добавлена библиотека Ui Ant Design
